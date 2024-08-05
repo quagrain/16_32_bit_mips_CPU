@@ -2666,7 +2666,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="CPU_CU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1.0"/>
+    <a name="simulationFrequency" val="32.0"/>
     <comp lib="0" loc="(1030,1800)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
