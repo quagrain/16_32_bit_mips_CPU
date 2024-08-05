@@ -27,9 +27,9 @@ architecture Behavioral of Instruction_Memory_VHDL is
     "00001000000001000000000000001110", -- addi: reg(0)+reg(4) = 0+4 = 4
     "00000101010010010000000000000000", -- add: reg(10) + reg(9) = 5+5 =10
     "00010011100010100000000000000000", -- andi: reg(10) = reg(28) & 0
-    "00100010010000010000000000000001", -- addi operation: reg(1) = reg(1) + 1 = = 54 + 1 = 55. ALU result will be 0037 (55 in hex).
-    "00010110100110000000000000000000", -- add operation: reg(3) = reg(3) + reg(2) = 3 + 2 = 5. ALU result will be 0005.
-    "00111110010000010000000000000001", -- branch less than 
+    "00100010010000010000000000000001", -- lw: reg(1) = reg(18 + 1) = 5
+    "00010110100110000000000000000000", -- ori: reg(24) = reg(20) | 0x"00000000"
+    "00001010010000010000000000000001", -- addi:  
     "00100100100000100000000000000010", -- addi operation: reg (2) = reg(2) + 2 = 2 + 2 = 4. ALU result will be 0004.
     "00001100010011110000000000000000", -- beq operation: ALU will perform subtraction = reg(0) - reg(1) = 0 - 55 = -54. ALU result will be ffca (-54 in hex).
     "00111100000000000000000000000101", -- jump operation to target address 5 (instruction 5: subi) no ALU result. ALU will be 0000.
