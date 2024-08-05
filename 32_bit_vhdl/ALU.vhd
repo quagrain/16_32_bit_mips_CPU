@@ -9,7 +9,7 @@ entity alu is
     inp_a : in STD_LOGIC_VECTOR(31 downto 0);  -- 32-bit input A
     inp_b : in STD_LOGIC_VECTOR(31 downto 0);  -- 32-bit input B
     alu_control : in STD_LOGIC_VECTOR(2 downto 0);  -- 3-bit control signal to determine ALU operation
-    alu_result : out STD_LOGIC_VECTOR(31 downto 0);  -- 16-bit output result
+    alu_result : out STD_LOGIC_VECTOR(31 downto 0);  -- 32-bit output result
     zero_flag, sign_flag : out std_logic  -- Output flags: zero flag and sign flag
   );
 end alu;
