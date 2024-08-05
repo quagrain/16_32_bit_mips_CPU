@@ -9,9 +9,9 @@ USE IEEE.numeric_std.all;
 -- Entity declaration for the SRAM module
 entity sRam is
   generic(
-    width: integer := 16;  -- Word width (bit-width of each location)
-    depth: integer := 8;  -- Number of memory locations
-    dataaddr: integer := 3  -- Address width (log2(depth))
+    width: integer := 32;  -- Word width (bit-width of each location)
+    depth: integer := 64;  -- Number of memory locations
+    dataaddr: integer := 6  -- Address width (log2(depth))
   );
   port(
     clk: in std_logic;  -- Clock input

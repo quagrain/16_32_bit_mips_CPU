@@ -6,8 +6,8 @@ use IEEE.NUMERIC_STD.ALL;
 entity MIPS_VHDL is
 port (
  clk,reset: in std_logic;
- pc_out : out std_logic_vector( 4 downto 0);
-alu_result: out std_logic_vector( 31 downto 0) 
+ pc_out : out std_logic_vector(4 downto 0);
+alu_result: out std_logic_vector(31 downto 0) 
 );
 end MIPS_VHDL;
 
@@ -54,7 +54,7 @@ architecture Behavioral of MIPS_VHDL is
   component ALU_Control_VHDL 
 	port(
   ALU_Control: out std_logic_vector(2 downto 0);
-  ALUOp : in std_logic_vector(2 downto 0);
+  ALUOp : in std_logic_vector(5 downto 0);
   ALU_Funct : in std_logic_vector(5 downto 0)
 );
  end component;
@@ -85,8 +85,8 @@ Port ( inp_a : in STD_LOGIC_VECTOR(31 downto 0);
 
 component sRam
 generic(width:	integer:=32; --word
-	depth:	integer:=32; --no of locations
-	dataaddr:	integer:=5);
+	depth:	integer:=64; --no of locations
+	dataaddr:	integer:=6);
 port(
 	clk: in std_logic;
 	Read:		in std_logic;
