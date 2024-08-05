@@ -24,8 +24,8 @@ architecture Behavioral of Instruction_Memory_VHDL is
   -- The registers have beeen initialized with default values in the register file
   
   constant rom_data: ROM_type := (
-    "01110000100001000000000000001110", -- li operation: load 14(e) into reg(4) = reg(0) + immediate (001110). ALU result will be 000e.
-    "00011001010010010000000000000000", -- sub operation: reg(1) = reg(4) - reg(5) = 15 - 5 = 9. ALU result will be 0009.
+    "00000000100001000000000000001110", -- li operation: load 14(e) into reg(4) = reg(0) + immediate (001110). ALU result will be 000e.
+    "00000001010010010000000000000000", -- sub operation: reg(1) = reg(4) - reg(5) = 15 - 5 = 9. ALU result will be 0009.
     "00010011100010100000000000000000", -- mult operation: reg(1) = reg(1) * reg (6) = 9 x 6 = 54. ALU result will be 0036 (54 in hex).
     "00100010010000010000000000000001", -- addi operation: reg(1) = reg(1) + 1 = = 54 + 1 = 55. ALU result will be 0037 (55 in hex).
     "00010110100110000000000000000000", -- add operation: reg(3) = reg(3) + reg(2) = 3 + 2 = 5. ALU result will be 0005.
