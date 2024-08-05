@@ -6,7 +6,7 @@ entity ALU_Control_VHDL is
   port(
     ALU_Control: out std_logic_vector(2 downto 0);  -- 3-bit output for ALU control signal
     ALUOp : in std_logic_vector(2 downto 0);  -- 3-bit input control signal from main control unit
-    ALU_Funct : in std_logic_vector(2 downto 0)  -- 3-bit function code from instruction
+    ALU_Funct : in std_logic_vector(5 downto 0)  -- 6-bit function code from instruction
   );
 end ALU_Control_VHDL;
 
